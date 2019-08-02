@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@Ajax.ActionLink("All Employee", "AllEmployee", "Home",new AjaxOptions(){
+
+    HttpMethod="Get",
+    InsertionMode=InsertionMode.Replace,
+    UpdateTargetId= "DivReplace",
+    LoadingElementId="immg"
+
+})
+
+
+
+
+
+
+
+
+<div id="immg" style="display:none">
+
+    <img src="~/Images/7d707b62-bb0c-4828-8376-59c624b2937b.gif" />
+
+</div>
+<div id="DivReplace">
+
+</div>
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
